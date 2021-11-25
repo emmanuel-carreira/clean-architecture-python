@@ -17,5 +17,5 @@ class CPFTest(unittest.TestCase):
             CPF("123.456.789/0001-01")
 
     def test_should_create_cpf_with_valid_number(self):
-        with self.assertRaises(ValueError):
-            CPF("123.456.789-00")
+        cpf = CPF("123.456.789-00")
+        self.assertEqual(cpf.number, "123.456.789-00")

@@ -6,7 +6,7 @@ from src.phone import Phone
 class PhoneTest(unittest.TestCase):
     def setUp(self) -> None:
         self.valid_ddd = "99"
-        self.valid_number = "999999999"
+        self.valid_number = "99999-9999"
 
     def test_should_not_create_phone_with_none_ddd(self):
         with self.assertRaises(ValueError):
@@ -30,7 +30,7 @@ class PhoneTest(unittest.TestCase):
 
     def test_should_not_create_phone_with_invalid_number(self):
         with self.assertRaises(ValueError):
-            Phone(self.valid_ddd, "9999-9999")
+            Phone(self.valid_ddd, "99999999")
 
     def test_should_create_phone_with_valid_ddd_and_number(self):
         phone = Phone(self.valid_ddd, self.valid_number)
