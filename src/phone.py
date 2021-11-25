@@ -1,7 +1,9 @@
 import re
 
+from src.value_object import ValueObject
 
-class Phone:
+
+class Phone(ValueObject):
     DDD_PATTERN = r"^\d{2}$"
     NUMBER_PATTERN = r"^\d{4,5}\-\d{4}$"
 
@@ -13,3 +15,6 @@ class Phone:
 
         self.ddd = ddd
         self.number = number
+
+    def __repr__(self) -> str:
+        return f"({self.ddd}) {self.number}"
