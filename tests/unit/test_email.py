@@ -19,3 +19,13 @@ class EmailTest(unittest.TestCase):
     def test_should_create_email_with_valid_address(self):
         email = Email("test@test.br")
         self.assertEqual(email.address, "test@test.br")
+
+    def test_emails_with_the_same_address_should_be_equal(self):
+        email_one = Email("test@test.br")
+        email_two = Email("test@test.br")
+        self.assertEqual(email_one, email_two)
+
+    def test_emails_with_different_addresses_should_not_be_equal(self):
+        email_one = Email("test@test.br")
+        email_two = Email("test_another_email@test.br")
+        self.assertNotEqual(email_one, email_two)
