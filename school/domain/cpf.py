@@ -1,6 +1,6 @@
 import re
 
-from src.value_object import ValueObject
+from school.domain.value_object import ValueObject
 
 
 class CPF(ValueObject):

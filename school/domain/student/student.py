@@ -1,6 +1,6 @@
-from src.cpf import CPF
-from src.email import Email
-from src.phone import Phone
+from school.domain.cpf import CPF
+from school.domain.email import Email
+from school.domain.phone import Phone
 
 
 class Student:

@@ -1,6 +1,6 @@
 import unittest
 
-from src.email import Email
+from school.domain.email import Email
 
 
 class EmailTest(unittest.TestCase):

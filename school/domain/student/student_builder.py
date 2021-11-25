@@ -1,6 +1,6 @@
-from src.cpf import CPF
-from src.phone import Phone
-from src.student import Student
+from school.domain.cpf import CPF
+from school.domain.phone import Phone
+from school.domain.student.student import Student
 
 
 class StudentBuilder:

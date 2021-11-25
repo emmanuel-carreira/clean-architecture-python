@@ -1,6 +1,6 @@
 import unittest
 
-from src.cpf import CPF
+from school.domain.cpf import CPF
 
 
 class CPFTest(unittest.TestCase):

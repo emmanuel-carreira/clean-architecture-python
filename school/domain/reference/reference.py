@@ -1,6 +1,6 @@
 from datetime import datetime
 
-from src.student import Student
+from school.domain.student.student import Student
 
 
 class Reference:
