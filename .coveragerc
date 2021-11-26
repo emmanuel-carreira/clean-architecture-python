@@ -1,0 +1,4 @@
+[run]
+source=./school
+command_line=-m unittest discover
+omit=*/__init__.py
