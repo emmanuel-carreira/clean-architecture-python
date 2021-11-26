@@ -10,14 +10,14 @@ class StudentBuilder:
 
     def with_cpf_email_and_name(self, cpf: str, email: str, name: str):
         if self.student_created:
-            raise ValueError('Student already created!')
+            raise ValueError("Student already created!")
         self.student_created = True
         self.student = Student(CPF(cpf), email, name)
         return self
 
     def with_phone(self, ddd: str, number: str):
         if not self.student:
-            raise AttributeError('Student has not been set yet')
+            raise AttributeError("Student has not been set yet")
         self.student.add_phone(Phone(ddd, number))
         return self
 

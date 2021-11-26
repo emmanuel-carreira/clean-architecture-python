@@ -38,15 +38,15 @@ class PhoneTest(unittest.TestCase):
         self.assertEqual(phone.number, self.valid_number)
 
     def test_phones_with_the_same_ddd_and_number_should_be_equal(self):
-        phone_one = Phone('12', '12345-6789')
-        phone_two = Phone('12', '12345-6789')
+        phone_one = Phone("12", "12345-6789")
+        phone_two = Phone("12", "12345-6789")
         self.assertEqual(phone_one, phone_two)
 
     def test_phones_without_the_same_ddd_and_number_should_not_be_equal(self):
-        phone_one = Phone('12', '12345-6789')
-        phone_two = Phone('99', '12345-6789')
-        phone_three = Phone('12', '98765-4321')
-        phone_four = Phone('99', '98765-4321')
+        phone_one = Phone("12", "12345-6789")
+        phone_two = Phone("99", "12345-6789")
+        phone_three = Phone("12", "98765-4321")
+        phone_four = Phone("99", "98765-4321")
         self.assertNotEqual(phone_one, phone_two)
         self.assertNotEqual(phone_one, phone_three)
         self.assertNotEqual(phone_one, phone_four)
