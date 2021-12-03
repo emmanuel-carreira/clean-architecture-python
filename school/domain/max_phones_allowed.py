@@ -1,0 +1,2 @@
+class MaxPhonesAllowed(Exception):
+    pass
