@@ -1,6 +1,6 @@
-from school.academic.domain.cpf import CPF
 from school.academic.domain.phone import Phone
 from school.academic.domain.student.student import Student
+from school.shared.domain.cpf import CPF
 
 
 class StudentBuilder:

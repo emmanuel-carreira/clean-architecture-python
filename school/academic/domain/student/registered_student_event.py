@@ -1,7 +1,7 @@
 from datetime import datetime
 
-from school.academic.domain.cpf import CPF
 from school.academic.domain.event import Event
+from school.shared.domain.cpf import CPF
 
 
 class RegisteredStudentEvent(Event):

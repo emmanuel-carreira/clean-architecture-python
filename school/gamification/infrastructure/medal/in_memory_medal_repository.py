@@ -1,8 +1,8 @@
 from typing import List
 
-from school.academic.domain.cpf import CPF
 from school.gamification.domain.medal.medal import Medal
 from school.gamification.domain.medal.medal_repository import MedalRepository
+from school.shared.domain.cpf import CPF
 
 
 class InMemoryMedalRepository(MedalRepository):

@@ -1,9 +1,9 @@
 from typing import List
 
-from school.academic.domain.cpf import CPF
 from school.academic.domain.student.student_not_found import StudentNotFound
 from school.academic.domain.student.student_repository import StudentRepository
 from school.academic.domain.student.student import Student
+from school.shared.domain.cpf import CPF
 
 
 class InMemoryStudentRepository(StudentRepository):

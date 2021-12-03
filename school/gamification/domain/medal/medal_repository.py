@@ -1,7 +1,7 @@
 from typing import List
 
-from school.academic.domain.cpf import CPF
 from school.gamification.domain.medal.medal import Medal
+from school.shared.domain.cpf import CPF
 
 
 class MedalRepository:

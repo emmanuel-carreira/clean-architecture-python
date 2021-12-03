@@ -1,7 +1,7 @@
-from school.academic.domain.cpf import CPF
 from school.academic.domain.email import Email
 from school.academic.domain.phone import Phone
 from school.academic.domain.max_phones_allowed import MaxPhonesAllowed
+from school.shared.domain.cpf import CPF
 
 
 class Student:
