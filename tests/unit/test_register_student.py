@@ -1,10 +1,10 @@
 import unittest
 
-from school.application.student.register_student import RegisterStudent
-from school.application.student.register_student_dto import RegisterStudentDTO
-from school.domain.cpf import CPF
-from school.domain.event_publisher import EventPublisher
-from school.infrastructure.student.in_memory_student_repository import InMemoryStudentRepository
+from school.academic.application.student.register_student import RegisterStudent
+from school.academic.application.student.register_student_dto import RegisterStudentDTO
+from school.academic.domain.cpf import CPF
+from school.academic.domain.event_publisher import EventPublisher
+from school.academic.infrastructure.student.in_memory_student_repository import InMemoryStudentRepository
 
 
 class RegisterStudentTest(unittest.TestCase):

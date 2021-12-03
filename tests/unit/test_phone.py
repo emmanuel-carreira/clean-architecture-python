@@ -1,6 +1,6 @@
 import unittest
 
-from school.domain.phone import Phone
+from school.academic.domain.phone import Phone
 
 
 class PhoneTest(unittest.TestCase):

@@ -1,8 +1,8 @@
 import unittest
 
-from school.domain.phone import Phone
-from school.domain.student.student_builder import StudentBuilder
-from school.domain.max_phones_allowed import MaxPhonesAllowed
+from school.academic.domain.phone import Phone
+from school.academic.domain.student.student_builder import StudentBuilder
+from school.academic.domain.max_phones_allowed import MaxPhonesAllowed
 
 
 class StudentTest(unittest.TestCase):
