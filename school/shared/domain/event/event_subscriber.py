@@ -1,4 +1,4 @@
-from school.academic.domain.event import Event
+from school.shared.domain.event.event import Event
 
 
 class EventSubscriber:

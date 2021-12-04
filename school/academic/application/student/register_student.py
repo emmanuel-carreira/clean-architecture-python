@@ -1,7 +1,7 @@
 from school.academic.application.student.register_student_dto import RegisterStudentDTO
-from school.academic.domain.event_publisher import EventPublisher
 from school.academic.domain.student.registered_student_event import RegisteredStudentEvent
 from school.academic.domain.student.student_repository import StudentRepository
+from school.shared.domain.event.event_publisher import EventPublisher
 
 
 class RegisterStudent:

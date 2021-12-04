@@ -1,6 +1,6 @@
 from datetime import datetime
 
-from school.academic.domain.event import Event
+from school.shared.domain.event.event import Event
 from school.shared.domain.cpf import CPF
 
 

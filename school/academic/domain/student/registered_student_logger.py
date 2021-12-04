@@ -1,8 +1,8 @@
 import logging
 
 from school.academic.domain.student.registered_student_event import RegisteredStudentEvent
-from school.academic.domain.event_subscriber import EventSubscriber
-from school.academic.domain.event import Event
+from school.shared.domain.event.event_subscriber import EventSubscriber
+from school.shared.domain.event.event import Event
 
 
 class RegisteredStudentLogger(EventSubscriber):
