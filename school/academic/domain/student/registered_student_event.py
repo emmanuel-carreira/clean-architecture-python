@@ -16,7 +16,7 @@ class RegisteredStudentEvent(Event):
 
     @property
     def infos(self) -> dict:
-        return {"student_cpf": self.student_cpf.number}
+        return {"student_cpf": self.student_cpf}
 
     @property
     def moment(self) -> datetime:
